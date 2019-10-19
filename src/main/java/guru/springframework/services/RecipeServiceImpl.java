@@ -2,6 +2,7 @@ package guru.springframework.services;
 
 import guru.springframework.domain.Recipe;
 import guru.springframework.repositories.RecipeRepository;
+import org.junit.jupiter.api.Test;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -17,6 +18,8 @@ public class RecipeServiceImpl implements RecipeService {
     public RecipeServiceImpl(RecipeRepository recipeRepository) {
         this.recipeRepository = recipeRepository;
     }
+
+
 
     @Override
     public Set<Recipe> getRecipe() {
